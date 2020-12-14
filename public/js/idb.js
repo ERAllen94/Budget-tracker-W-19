@@ -7,7 +7,7 @@ request.onupgradeneeded = function (event) {
     // save a reference to the database
     const db = event.target.result;
     //create an object store (table) called `new_budget`, set it to have an auto incrementing primary key of sorts
-    db.reateObjectStore('new_budget', {autoIncrement: true});
+    db.createObjectStore('new_budget', {autoIncrement: true});
 };
 
 //upon a successful
